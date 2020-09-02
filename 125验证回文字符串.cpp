@@ -2,21 +2,21 @@
 #include<string>
 using namespace std;
  
-//Ë¼Â·¾ÍÊÇÏÈ×ª»»³ÉÍ³Ò»×ÖÄ¸µÄ×Ö·û´® 
+//æ€è·¯å°±æ˜¯å…ˆè½¬æ¢æˆç»Ÿä¸€å­—æ¯çš„å­—ç¬¦ä¸² 
 bool isPalindrome(string s) 
 {
 	string str; 
 	int j=s.size()-1;
-	for(int i=0;i<s.size();i++)   //×ª»»×Ö·û´® 
+	for(int i=0;i<s.size();i++)   //è½¬æ¢å­—ç¬¦ä¸² 
 	{
-		if(isalnum(s[i]))  //ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÊÇÊı×Ö»òÕß×ÖÄ¸ 
+		if(isalnum(s[i]))  //åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦æ˜¯æ•°å­—æˆ–è€…å­—æ¯ 
 		{
-			str+=tolower(s[i]); //½«´óĞ´×ÖÄ¸×ª»»ÎªĞ¡Ğ´ 
+			str+=tolower(s[i]); //å°†å¤§å†™å­—æ¯è½¬æ¢ä¸ºå°å†™ 
 		}
 		
 	}
 	
-	//ÅĞ¶ÏÊÇ·ñÊÇ»ØÎÄ
+	//åˆ¤æ–­æ˜¯å¦æ˜¯å›æ–‡
 	int len=str.length();
 	for(int i=0;i<len/2;i++)
 	{
