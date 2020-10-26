@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
 #include<vector> 
-int find(int k)
+int test_flag=1;
+#define find(int k) do 
 {
+	if(test_flag==0) break;
 	//先生成一个fib
 	vector<int> arr;
 	int a=1;
@@ -47,7 +49,7 @@ int find(int k)
 	  } 
 	 return count;
 	
- } 
+ } while(0);
  int main()
  {
  	int k=19;
